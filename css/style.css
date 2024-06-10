@@ -1,71 +1,120 @@
-/* bg #FFFEF9 - #FCF2FB - #FAFAFA */
+/* bg #FFFEF9 - #FCF2FB - #FAFAFA - #FFF9F9*/
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: #02586F;
-}
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.header-index {
+/* Header - Nav */
+.navbar-index {
     background-color: #FAFAFA;
+    display: flex;
 }
-.contenedor-navbar {
+.navbar-index img {
+    width: 65px;
+    height: 65px;
+}
+.container-fluid {
     display: flex;
     justify-content: space-around;
-}
-.contenedor-navbar a {
-    display: flex;
     align-items: center;
-    font-size: 35px;
 }
-.logo-nav {
-    width: 75px;
-    height: 75px;
-    margin-left: 50px;
+.contenedor-listas {
     display: flex;
+    margin: 0 25px;
+}
+.nav-item {
+    display: flex;
+    margin: 0 25px;
+    font-size: 17px;
+}
+.btn-carrito {
+    background-color: #FAFAFA; /* #FF703D */
+    border: none;
+    padding: 5px 20px;
+}
+.btn-carrito img {
+    width: 30px;
+    height: 30px;
+
 }
 
-.lista-index {
+/* Main */
+.contenedor-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+.main-titulo {
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+.main-subtitulo {
+    font-size: 40px;
+    margin-bottom: 90px;
+}
+.main-banner {
+    width: 90%;
+    height: 400px;
+}
+
+.tab-redes-scroll {
+    margin-left: 20px;
+    display: flex;
+    position: fixed;
+    top: 50%;
+}
+.nav-tab-redes img {
+    display: flex;
+    margin: 40px 10px;
+}
+.nav-link-facebook img {
+    width: 25px;
+    height: 25px;
+}
+.nav-link-instagram img {
+    width: 25px;
+    height: 25px;
+}
+.nav-link-whatsapp img{
+    width: 27px;
+    height: 27px;
+}
+
+.contenedor-producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.grilla-tarjeta img {
+    display: flex;
+    width: 90%;
+    height: 250px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.grilla-tarjeta {
+    display: flex;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 50px;
 }
-.lista-inicio {
+.tarjeta {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0 25px;
-    font-size: 20px;
+    flex-direction: column;
 }
-.lista-galeria {
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
-    font-size: 20px;
+.prod2 {
+    width: 38%;
 }
-.lista-producto {
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
-    font-size: 20px;
-}
-.lista-contacto {
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
-    font-size: 20px;
-}
-.lista-carrito {
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
-    font-size: 20px;
+.boton-vermas {
+    border: none;
+    border-radius: 7px;
+    background-color: #FF703D;
+    padding: 5px 35px;
 }
 
