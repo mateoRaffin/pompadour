@@ -1,0 +1,39 @@
+/* Header - Nav */
+.navbar-index {
+    background-color: $color-marca-bg; /* #FAFAFA - #F9977B - #FF703D(naranja) - #FCCDCD */
+    display: flex;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    img {
+        width: 75px;
+        height: 75px;
+    }
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-listas {
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+.nav-item {
+    display: flex;
+    margin: 0 25px;
+    font-size: 18px;
+}
+.btn-carrito {
+    background-color: $color-marca-bg; /* #FAFAFA */
+    border: none;
+    padding: 7px 20px;
+    display: flex;   
+    align-items: center;
+    img {
+        width: 35px;
+        height: 35px;
+    }    
+}
