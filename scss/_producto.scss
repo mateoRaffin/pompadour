@@ -6,30 +6,35 @@
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
-}
-.grilla-tarjeta img {
-    display: flex;
-    width: 90%;
-    height: 250px;
-    border-radius: 7px;
-    margin-bottom: 10px;
-}
-.grilla-tarjeta {
-    display: flex;
-    list-style-type: none;
-}
-.tarjeta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.prod2 {
-    width: 38%;
-}
-.boton-vermas {
-    border: none;
-    border-radius: 7px;
-    background-color: $color-marca-bg;
-    padding: 5px 35px;
+
+    .grilla-tarjeta img {
+        display: flex;
+        width: 90%;
+        height: 250px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+
+    .grilla-tarjeta {
+        display: flex;
+        list-style-type: none;
+
+        .tarjeta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .prod2 {
+            width: 38%;
+        }
+
+        .boton-vermas {
+            border: none;
+            border-radius: 7px;
+            background-color: $color-marca-bg;
+            padding: 5px 35px;
+        }
+    }
 }

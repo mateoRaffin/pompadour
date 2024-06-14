@@ -75,7 +75,7 @@
         </div>
 
         <div class="contenedor-producto">
-            <h2></h2>
+            <!-- <h2></h2> Agregar o no -->
             <div class="grilla-tarjeta">
                 <li class="tarjeta prod1">
                     <img src="./multimedia/img/galeria/costura-jeans-corazonazul.jpg" alt="">
@@ -123,6 +123,11 @@
         <div class="contenedor-contacto">
             <div class="contacto-index">
                 <!-- Form - iframe - redes - titulo (h2/h3) -->
+                 <h2>CONTACTE CON NOSOTROS</h2>
+                 <form action="" method="post">
+                    <label for=""></label>
+                 </form>
+
             </div>
         </div>
 
@@ -156,3 +161,96 @@
 </body>
 
 </html>
+
+<!-- Semana 8: clase sobre animaciones.
+    Gradientes: 
+        Con "background-image": linear-gradient(to bottom, red, green); y puedo seguir agregando colores, y en el sentido que queramos, left,rigth,top..
+            También puedo poner varias veces un color, para darle un >% a ese color en pantalla..
+        
+                                radial-gradient("colores"), y más funciones..
+                              
+    Transformaciones:
+        Escribimos "transform": translate(50px, 15px);
+            El primer valor de transform es para el valor en X, y el segundo para el valor en Y
+            transform: translateY - translateX y entre paréntesis el valor.
+
+                                rotate (Y o X) y entre paréntesis el valor en grados.
+                                rotateY(180deg); 
+
+                                scale(1,2); siempre el primero hace referencia al eje X y el otro al Y.
+                                scale(3,1,5) y podemos hacer que multiplique..
+
+                                skew: "es torcer" (30deg, 15deg);
+                                
+    Transiciones:  el "transition va en el primer h1 {}, fuera del hover.."
+    h1: hover {
+        height: 450px;
+        width: 450px:
+        background-image: radial-gradient(cyan, black, cyan);
+    }
+                transition: all 2000ms; "all" que ocurran todos los cambios que definimos en el "hover"
+                
+                Pero le podemos decir que sean en diferentes tiempos:
+
+                transition: height 1s, width 3s; Funciona con opacity, podemos usarlo en algún botón, id, etc..
+
+    Animaciones: con @keyframes lo llamamos y después le ponemos el nombre
+    
+    @keyframes animacion-ejemplo {
+        Y le decimos lo que queramos que pase, empezando con un %:
+
+        0% {
+            background-color: red;
+            color: green;
+        }
+        15% {
+            background-color: blue;
+        }
+        50% {
+            background-color: blue;
+            color: white;
+        }
+        75% {
+            background-color: chocolate;
+        }
+    }
+
+    Luego, dentro del h1, por ejemplo, llamamos la animacion creada:
+    animation-name: animacion-ejemplo;
+    animation-iteration-count: infinite; (y no se detiene nunca)
+    animation-duration: 5000ms;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+
+    Dato de la profe: Por ahí un poco el responsive, pero sería únicamente 
+    usar el overflow:hidden; en el padre para que la animación se corte en 
+    el padre y no se salga de la pantalla.
+
+    Animate.css y más! 
+
+    http://css3studio.com/index.php
+
+    https://webcode.tools/css-generator#google_vignette
+
+    https://animista.net/
+
+    https://animate.style/
+
+    https://michalsnik.github.io/aos/
+
+    
+
+    1 extend o 1 mixin, 1 mapa, 1 a 2 variables, 
+    
+    Aplicar partials: galeria, productos, footer, etc, lo definimos 
+    
+    Aplicar anidamientos si o si..
+
+    todo pasado a sass!
+
+    Animacion ;) en cada html en lo posible, y full responsive..
+
+    Comentario de la profe: Lo ideal es que el scss general, quede con los imports, así está bien ordenado
+    Y además, quedarnos sólo con el scss, el css anterior, hay que sacarlo del proyecto.. Terminado el backup, todo en github por supuesto..
+
+-->

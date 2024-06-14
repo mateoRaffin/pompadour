@@ -4,54 +4,64 @@
     margin-top: auto;
     padding-top: 10px;
     padding-bottom: 2px;
-}
-.footer-contenedor {
-    max-width: 1200px;
-}
-.footer-seccion {
-    display: flex;
-    align-items: center;
-    margin-right: -20rem;
-    margin-left: 20rem;
-    padding-left: 0;
-    flex-wrap: wrap;
-}
-.footer-lista {
-    display: flex;
-    padding-left: 1050px;
-}
-.footer-lista li {
-    margin: 0 15px;
-    list-style-type: none;
-}
-.footer-lista a {
-    text-decoration: none;
-}
-.footer-navitem img {
-    width: 20px;
-    height: 20px;
-}
-.section-divide {
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin: 1rem;
-    background-color: #000;
-    opacity: .2;
-}
-.footer-copyright {
-    position: relative;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    max-width: 80%;
-}
-.footer-logo {
-    display: flex;
-    padding-left: 165px;
-    padding-bottom: 10px;
-}
-.footer-logo a img {
-    width: 75px;
-    height: 75px;
+
+    .contenedor {
+        max-width: 1200px;
+
+        .seccion {
+            display: flex;
+            align-items: center;
+            margin-right: -20rem;
+            margin-left: 20rem;
+            padding-left: 0;
+            flex-wrap: wrap;
+
+            .lista {
+                display: flex;
+                padding-left: 1050px;
+
+                li {
+                    margin: 0 15px;
+                    list-style-type: none;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .navitem img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .divide {
+                display: block;
+                width: 100%;
+                height: 1px;
+                margin: 1rem;
+                background-color: #000;
+                opacity: .2;
+            }
+
+            .copyright {
+                position: relative;
+                width: 100%;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                max-width: 80%;
+            }
+
+            .logo {
+                display: flex;
+                padding-left: 165px;
+                padding-bottom: 10px;
+
+                a img {
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+    }
 }
