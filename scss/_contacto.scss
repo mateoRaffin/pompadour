@@ -1,0 +1,12 @@
+.contenedor-contacto {
+    background-color: $color-marca-bg;
+
+    .contacto-index {
+        display: flex;
+        margin: 0 10px;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+}

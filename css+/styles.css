@@ -1,18 +1,224 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background-color: map-get($paleta-colores, color-texto);
- *   |                               ^^^^^^^^^^^^^^^
- *   '
- *   scss\_footer.scss 3:31  @import
- *   scss\styles.scss 8:9    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: map-get($paleta-colores, color-texto);\d\a   \2502                                ^^^^^^^^^^^^^^^\a   \2575 \a   scss\\_footer.scss 3:31  @import\a   scss\\styles.scss 8:9    root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Header - Nav */
+header .navbar-index {
+  background-color: #F9977B;
+  /* #FAFAFA - #F9977B - #FF703D(naranja) - #FCCDCD */
+  display: flex;
+  font-size: 22px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .navbar-index .container-fluid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navbar-index .container-fluid img {
+  width: 75px;
+  height: 75px;
+}
+header .navbar-index .container-fluid .contenedor-listas {
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+}
+header .navbar-index .container-fluid .contenedor-listas .nav-item {
+  display: flex;
+  margin: 0 25px;
+  font-size: 18px;
+}
+header .navbar-index .container-fluid .contenedor-listas .btn-carrito {
+  background-color: #F9977B;
+  /* #FAFAFA */
+  border: none;
+  padding: 7px 20px;
+  display: flex;
+  align-items: center;
+}
+header .navbar-index .container-fluid .contenedor-listas .btn-carrito img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Main */
+.main-index .tab-redes-scroll {
+  margin-left: 20px;
+  display: flex;
+  position: fixed;
+  top: 50%;
+}
+.main-index .tab-redes-scroll .nav-tab-redes img {
+  display: flex;
+  margin: 40px 10px;
+}
+.main-index .tab-redes-scroll .nav-tab-redes .nav-link-facebook img {
+  width: 25px;
+  height: 25px;
+}
+.main-index .tab-redes-scroll .nav-tab-redes .nav-link-instagram img {
+  width: 25px;
+  height: 25px;
+}
+.main-index .tab-redes-scroll .nav-tab-redes .nav-link-whatsapp img {
+  width: 27px;
+  height: 27px;
+}
+.main-index .contenedor-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+.main-index .contenedor-main .main-titulo {
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+.main-index .contenedor-main .main-subtitulo {
+  font-size: 40px;
+  margin-bottom: 90px;
+}
+.main-index .contenedor-main .main-banner {
+  width: 90%;
+  height: 400px;
+}
+
+/* Producto */
+.contenedor-producto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.contenedor-producto .grilla-tarjeta img {
+  display: flex;
+  width: 90%;
+  height: 250px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.contenedor-producto .grilla-tarjeta {
+  display: flex;
+  list-style-type: none;
+}
+.contenedor-producto .grilla-tarjeta .tarjeta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-producto .grilla-tarjeta .prod2 {
+  width: 38%;
+}
+.contenedor-producto .grilla-tarjeta .boton-vermas {
+  border: none;
+  border-radius: 7px;
+  background-color: #F9977B;
+  padding: 5px 35px;
+}
+
+/* About Us */
+.contenedor-aboutus {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.contenedor-aboutus .aboutus-index {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10rem;
+  padding-right: 5rem;
+}
+.contenedor-aboutus .aboutus-index h2 {
+  font-size: 25px;
+}
+.contenedor-aboutus .imagen-aboutus {
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+}
+.contenedor-aboutus .imagen-aboutus img {
+  width: 850px;
+  height: 650px;
+}
+
+.contenedor-contacto {
+  background-color: #F9977B;
+}
+.contenedor-contacto .contacto-index {
+  display: flex;
+  margin: 0 10px;
+}
+.contenedor-contacto .contacto-index h2 {
+  font-size: 25px;
+}
+
+/* Estilos del Footer */
+.footer-index {
+  background-color: #F9977B;
+  margin-top: auto;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.footer-index .footer-contenedor {
+  max-width: 1200px;
+}
+.footer-index .footer-contenedor .footer-seccion {
+  display: flex;
+  align-items: center;
+  margin-right: -20rem;
+  margin-left: 20rem;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-lista {
+  display: flex;
+  padding-left: 1000px;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-lista .footer-navitem {
+  margin: 0 25px;
+  list-style-type: none;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-lista .footer-navitem img {
+  width: 20px;
+  height: 20px;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-lista a {
+  text-decoration: none;
+}
+.footer-index .footer-contenedor .footer-seccion .section-divide {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 1rem;
+  background-color: #000;
+  opacity: 0.2;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-copyright {
+  position: relative;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 80%;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-logo {
+  display: flex;
+  padding-left: 165px;
+  padding-bottom: 10px;
+}
+.footer-index .footer-contenedor .footer-seccion .footer-logo a img {
+  width: 75px;
+  height: 75px;
+}
+
+/*# sourceMappingURL=styles.css.map */

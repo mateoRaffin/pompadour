@@ -3,6 +3,7 @@
     display: flex;
     margin-top: 200px;
     margin-bottom: 200px;
+
     .aboutus-index {
         display: flex;
         justify-content: space-evenly;
@@ -10,14 +11,20 @@
         flex-direction: column;
         padding-left: 10rem;
         padding-right: 5rem;
+
+        h2 {
+            font-size: 25px;
+        }
     }
+
     .imagen-aboutus {
         display: flex;
         justify-content: center;
         padding-right: 2rem;
+
         img {
             width: 850px;
             height: 650px;
         }
-    }    
+    }
 }
