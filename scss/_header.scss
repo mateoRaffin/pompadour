@@ -1,7 +1,7 @@
 /* Header - Nav */
 header {
     .navbar-index {
-        background-color: $color-marca-fondo;
+        background-color: $color-marca-bg;
         /* #FAFAFA - #F9977B - #FF703D(naranja) - #FCCDCD */
         display: flex;
         font-size: 22px;
@@ -31,7 +31,7 @@ header {
                 }
 
                 .btn-carrito {
-                    background-color: $color-marca-fondo;
+                    background-color: $color-marca-bg;
                     /* #FAFAFA */
                     border: none;
                     padding: 7px 20px;
