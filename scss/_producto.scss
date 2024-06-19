@@ -7,14 +7,6 @@
     justify-content: center;
     margin-bottom: 100px;
 
-    .grilla-tarjeta img {
-        display: flex;
-        width: 90%;
-        height: 250px;
-        border-radius: 7px;
-        margin-bottom: 10px;
-    }
-
     .grilla-tarjeta {
         display: flex;
         list-style-type: none;
@@ -24,17 +16,20 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-        }
+            img {
+                display: flex;
+                width: 90%;
+                height: 250px;
+                border-radius: 7px;
+                margin-bottom: 10px;
+            }
 
-        .prod2 {
-            width: 38%;
-        }
-
-        .boton-vermas {
-            border: none;
-            border-radius: 7px;
-            background-color: $color-marca-bg;
-            padding: 5px 35px;
+            .boton-vermas {
+                border: none;
+                border-radius: 7px;
+                background-color: $color-marca-bg;
+                padding: 5px 35px;
+            }
         }
     }
 }

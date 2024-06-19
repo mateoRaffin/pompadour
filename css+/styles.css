@@ -12,6 +12,7 @@ header .navbar-index {
   font-size: 22px;
   position: fixed;
   top: 0;
+  z-index: 3;
   width: 100%;
 }
 header .navbar-index .container-fluid {
@@ -98,13 +99,6 @@ header .navbar-index .container-fluid .contenedor-listas .btn-carrito img {
   justify-content: center;
   margin-bottom: 100px;
 }
-.contenedor-producto .grilla-tarjeta img {
-  display: flex;
-  width: 90%;
-  height: 250px;
-  border-radius: 7px;
-  margin-bottom: 10px;
-}
 .contenedor-producto .grilla-tarjeta {
   display: flex;
   list-style-type: none;
@@ -115,10 +109,14 @@ header .navbar-index .container-fluid .contenedor-listas .btn-carrito img {
   align-items: center;
   flex-direction: column;
 }
-.contenedor-producto .grilla-tarjeta .prod2 {
-  width: 38%;
+.contenedor-producto .grilla-tarjeta .tarjeta img {
+  display: flex;
+  width: 90%;
+  height: 250px;
+  border-radius: 7px;
+  margin-bottom: 10px;
 }
-.contenedor-producto .grilla-tarjeta .boton-vermas {
+.contenedor-producto .grilla-tarjeta .tarjeta .boton-vermas {
   border: none;
   border-radius: 7px;
   background-color: #F9977B;
@@ -148,8 +146,8 @@ header .navbar-index .container-fluid .contenedor-listas .btn-carrito img {
   padding-right: 2rem;
 }
 .contenedor-aboutus .imagen-aboutus img {
-  width: 850px;
-  height: 650px;
+  width: 680px;
+  height: 580px;
 }
 
 .contenedor-contacto {
